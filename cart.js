@@ -1,5 +1,6 @@
 print_cart();
 subtotal();
+item_count()
 
 function print_cart(){
     let cart = JSON.parse(localStorage.getItem("product_cart"))?? [];
@@ -36,7 +37,7 @@ html+=`
                                     </div>
 
                                 </div>
-                                <div class="col-md-1" onclick= "deleteItem (${product.id})">
+                                <div class="col-md-1" onclick= "deleteItem(${product.id})">
                                     <i class="bi bi-trash remove-btn"></i>
                                 </div>
                             </div>
@@ -48,8 +49,7 @@ html+=`
 });
 
 document.querySelector(".show_products").innerHTML= html;
-let item = cart.length > 1 ? "Items": "Item";
-document.querySelector(".item_count").innerText= cart.length + " "
-+ item;
-
+let item = cart.length > 1 ? "items": "item";
+document.querySelector(".item_count").innerText= cart.length + " " + item;
+item_count()
 }
