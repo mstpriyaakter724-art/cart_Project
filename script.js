@@ -21,28 +21,20 @@ async function getProducts() {
 
             html += `
            
-            <div class="col-md-3 col-sm-6">
-                        <div class="product-grid">
-                            <div class="product-image">
-                                <a href="#" class="image">
-                                    <img class="pic-1" src="${product.thumbnail}">
-                                    <img class="pic-2" src="${product.images}">
-                                </a>
-                                <a href="#" class="product-like-icon" data-tip="Add to Wishlist">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                                <ul class="product-links">
-                                    <li><a href="#"><i class="fa fa-search"></i></a></li>
-                                    <li onclick = 'add_to_cart(${cartproduct})' ><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-random"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="product-content">
-                                <h3 class="title"><a href="#">${product.title}</a></h3>
-                                <div class="price">$${product.price}</div>
-                            </div>
-                        </div>
-                    </div>
+               <div class="col-md-4 product-card reveal-item active">
+          <div class="product-card-inner">
+
+            <div class="product-image">
+              <img src="${product.thumbnail}" alt="Smart TV QLED 65">
+            </div>
+
+            <h5>${product.title}</h5>
+            <p class="price">$${product.price}</p>
+            <p onclick='add_to_cart(${cartproduct})' class="btn btn-outline-dark btn-sm">Ver producto</p>
+
+          </div>
+        </div>
+
             
             
             `;

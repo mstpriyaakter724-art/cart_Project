@@ -7,6 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Cart</title>
+<!-- ==============================Navbar link=============================== -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+
 
     <style>
         .cart-wrapper {
@@ -91,35 +96,93 @@
             padding: 4px 8px;
             border-radius: 6px;
         }
+
+
+
+
+
+
+        
+    .navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #ccc !important;
+}
+
+.nav-link.active {
+    color: #fff !important;
+}
+
+.form-control {
+    border-radius: 20px 0 0 20px;
+}
+
+.btn-outline-light {
+    border-radius: 0 20px 20px 0;
+}
     </style>
+     
 </head>
 
 <body>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="E-commerce.html">Home</a>
-                    </li>                  
-                   
-                    <li class="nav-item">
-                        <a class="nav-link " href="cart.html" tabindex="-1" aria-disabled="true">
-                            <i class="bi bi-cart position-relative cart_items_count">
-                             </i>
-                        </a>
-                    </li>
-                </ul>
+     <section class=" py-1">
+  <header>
 
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light px-2">
+      <a class="navbar-brand" href="#">
+        <img src="https://www.svgrepo.com/show/303109/adobe-xd-logo.svg" alt="Logo" height="40">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse p-2" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="product.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+         
+      </div>
+
+      <div>
+         <a class="nav-link " href="cart.html" tabindex="-1" aria-disabled="true">
+                            <i class="bi bi-cart position-relative cart_items_count">
+
+                            </i></a>
+      </div>
     </nav>
+
+  </header>
+</section>
+
     
     
     
